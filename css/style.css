@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Aleo');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0076DE;
+  --secondary-color: #97caf7;
+  --light-color:#f1f1f1;
+}
+body {
+  font-family: 'Raleway', Sans-serif;
+  background: white;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* utility classes */
+
+.btn {
+  padding:0.8rem;
+  border: none;
+  background: var(--light-color);
+}
+.btn:hover {
+  opacity:0.5;
+}
+.container {
+  max-width: 1000px;
+  margin:auto;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+#mobile-btn, .toggler{
+  display:none;
+}
+
+/* navbar */
+
+#navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+  background: transparent;
+  z-index: 2;
+  position:fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background: var(--secondary-color)
+}
+#navbar-mobile ul {
+  display: flex;
+  align-content: center;
+  justify-content: end;
+  align-content: center;
+}
+#navbar-mobile ul li {
+  padding-top: 12px;
+  padding-left:1rem;
+  padding-right: 1rem;
+  height: auto;
+}
+#navbar-mobile ul li:last-child {
+  padding: 0px 1rem;
+}
+#navbar-mobile ul li a {
+  color: var(--primary-color);
+  padding: 0rem;
+  margin-top: 50px;
+}
+#navbar-mobile ul li input:first-child{
+  padding:0.8rem;
+}
+#navbar-mobile ul li button{
+  padding:0.9rem;
+  background: var(--light-color);
+  border:none;
+}
+#navbar-mobile ul li button:hover{
+  opacity:0.5;
+}
+
+#navbar-mobile i {
+  color: var(--primary-color);
+  padding-top:0px;
+}

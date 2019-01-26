@@ -1,0 +1,85 @@
+#mobile-btn, .toggler {
+  display: inline-block;
+}
+#navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem;
+  background: var(--secondary-color);
+}
+#navbar-mobile i {
+  text-align:center;
+  margin: 1rem;
+}
+#navbar-mobile ul {
+  flex-direction: column;
+  opacity: 0;
+  height: 0px;
+  transition: all 0.5s ease;
+}
+#navbar-mobile ul li {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+#navbar-mobile ul li:nth-child(4),
+#navbar-mobile ul li:nth-child(5),
+#navbar-mobile ul li:nth-child(6){
+  display: none;
+}
+#navbar-mobile ul li a:hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+#navbar-mobile ul li input:first-child{
+  position: relative;
+  margin-left:50px;
+}
+#navbar-mobile ul li button{
+  position:relative;
+  left: -50px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+@media screen and (max-width:330px){
+  #navbar-mobile ul li input:first-child{
+    width: 150px;
+  }
+}
+#mobile-btn {
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  z-index: 5;
+}
+#mobile-btn:checked ~ #navbar-mobile ul{
+  opacity: 1;
+  height: calc(60px *4)
+}
+
+.toggler {
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 40px;
+  width: 60px;
+  margin: 10px 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 4;
+  /* border: 1px solid orangered; */
+}
+.toggler div {
+  margin: 0px 9px;
+  height: 2px;
+  background: var(--primary-color);
+  width: 70%;
+  border-radius: 5px;
+}
