@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #0076DE;
-  --secondary-color: #97caf7;
+  --primary-color: brown;
+  --secondary-color: rgb(233, 208, 64);
   --light-color:#f1f1f1;
 }
 body {
@@ -67,7 +67,7 @@ a {
   top:0;
   left: 0;
   right: 0;
-  background: var(--secondary-color)
+  background: var(--primary-color);
 }
 #navbar-mobile ul {
   display: flex;
@@ -85,7 +85,7 @@ a {
   padding: 0px 1rem;
 }
 #navbar-mobile ul li a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0rem;
   margin-top: 50px;
 }
@@ -102,6 +102,6 @@ a {
 }
 
 #navbar-mobile i {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding-top:0px;
 }

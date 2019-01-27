@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0rem;
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 #navbar-mobile i {
   text-align:center;
@@ -23,7 +23,7 @@
   padding: 1rem;
   width: 100%;
   visibility:hidden;
-  transition: all 1 ease;
+  transition: all 0.5s ease;
 }
 #navbar-mobile ul li:nth-child(4),
 #navbar-mobile ul li:nth-child(5),
@@ -84,7 +84,7 @@
 .toggler div {
   margin: 0px 9px;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   width: 70%;
   border-radius: 5px;
 }
